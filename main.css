@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 3rem;
+  background-color: cadetblue;
+}
+
+h1 {
+  font-family: var(--h1);
+  font-size: var(--h1size);
+  color: var(--beige);
+  margin: 1rem;
+}
+
+h2 {
+  font-family: var(--h2);
+  font-size: var(--h2size);
+  color: var(--blueD);
+}
+
+p {
+  font-family: var(--p);
+  font-size: var(--psize);
+  color: var(--beige);
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--p);
+  color: var(--beige);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+.arrow {
+  font-size: 25px;
+  position: absolute;
+  top: 1%;
+}
+
+.arrow span {
+  padding-right: 1.5rem;
+  font-size: var(--h1size);
+}
+header p {
+  color: var(--beige);
+}
+
+.arrow a:hover {
+  color: white;
+}
+
+li {
+  list-style-type: "☆";
+}
+
+li::marker {
+  color: var(--pink);
+}
+
+.paddingbt2 {
+  margin-bottom: 2rem;
+}
+
+.bold {
+  font-weight: 1000;
+  font-style: italic;
+  margin: 0;
+  position: static;
+}
+
+.h2small {
+  font-size: 25px;
+}
+
+p,
+li,
+a {
+  font-family: "Times New Roman", Times, serif;
+}
+
+:root {
+  /*color*/
+  --pink: #ff82a9;
+  --blue: #7f95d1;
+  --blueD: #384b80;
+  --grass: #c1cda6;
+  --beige: #ffebe7;
+  --black: #121114;
+  /*font*/
+  --h1: "sarina", sans-serif;
+  --h2: "Dancing Script", cursive;
+  --p: "Times New Roman", Times, serif;
+
+  /*font size*/
+  --h1size: 40px;
+  --h2size: 35px;
+  --psize: 20px;
+}
+
+@media (min-width: 800px) {
+  body {
+    padding-right: 25rem;
+    padding-left: 25rem;
+  }
+}
